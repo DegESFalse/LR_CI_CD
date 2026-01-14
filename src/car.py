@@ -13,7 +13,7 @@ class Car:
         self._fuel_in_tank += fuel_quantity
 
     def drive(self, distance_km: float):
-        fuel_burned: int = 8*(distance_km / 100)
+        fuel_burned: int = 8 * (distance_km / 100)
         if self._fuel_in_tank < fuel_burned:
             raise Exception("Не доедем жеж...")
         self._fuel_in_tank -= fuel_burned
